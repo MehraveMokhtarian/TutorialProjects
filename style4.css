@@ -1,0 +1,64 @@
+/* General Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(225, 216, 255);
+}
+
+.container {
+    width: 60%;
+    height: 18rem;
+    background-color: whitesmoke;
+    border-radius: 1rem;
+    box-shadow: 0 0 3px;
+}
+
+#timer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 72px;
+    text-align: center;
+    margin: 0px auto;
+    padding: 4rem;
+}
+
+.buttons {
+    text-align: center;
+}
+
+button {
+    margin: 0 10px;
+    border: none;
+}
+
+button i {
+    font-size: 1.5rem;
+    padding: 1.2rem;
+    color: white;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 6rem;
+    align-self: center;
+}
+
+#play {
+    background-color: black;
+}
+#pause {
+    background-color: black;
+}
+#reset {
+    background-color: black;
+}

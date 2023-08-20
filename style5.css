@@ -1,0 +1,64 @@
+/* General Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(58, 0, 0);
+}
+
+#add-task-container{
+    width: 350px;
+    padding: 14px 10px;
+    background:  wheat;
+    border-radius: .2rem;
+    display: flex;
+}
+
+input {
+    flex: 5;
+    margin-right: .4 rem;
+    padding: .3rem;
+    background-color: rgb(58, 0, 0);
+    border: 0;
+    border-bottom: 1px solid wheat;
+    color: white;
+    border-radius: 2px;
+}
+
+#add-task{
+    flex: .3;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.task {
+    margin-top: .5rem;
+    width: 100%;
+    background-color: antiquewhite;
+    border-radius: .2rem;
+    padding: .5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.task li{
+    list-style: none;
+    flex: 4;
+}
+
+.task button {
+    flex: .2;
+    background-color: transparent;
+    border-color: transparent;
+    color:rgb(58, 0, 0)
+}

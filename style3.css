@@ -1,0 +1,70 @@
+/* General Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(228, 228, 228);
+}
+
+.accordion{
+    width: 65%;
+    background-color: #fff;
+    padding: 4rem;
+    border-radius: 4rem;
+}
+
+.accordion .accoirdion-title{
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.accordion .content-container .question {
+    padding: 1rem 0px;
+    font-size: 22px;
+    cursor: pointer;
+    border-bottom: 1px solid #000;
+    position: relative;
+}
+
+.accordion .content-container .question::after {
+    content: '+';
+    position: absolute;
+    right: 0rem;
+}
+
+.accordion .content-container .answer {
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 22px;
+    line-height: 1.5;
+    width: 100%;
+
+    height:0px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+/* JS Styling Link */
+.accordion .content-container.active .answer {
+    height: fit-content;
+}
+.accordion .content-container.active .question {
+    color: blue;
+    transition: .5s;
+    border-bottom: 1px solid blue;
+}
+.accordion .content-container.active .question::after {
+    content: '-';
+    font-size: 30px;
+    transition: .5s;
+}
